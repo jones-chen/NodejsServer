@@ -9,8 +9,8 @@ const port=3000
 const server = http.createServer((req, res) => {
     // Status code
     res.statusCode = 200 //OK
-    res.setHeader('Content-Type', 'text/plain')
-    res.end('This is my first server created in Node.js' )
+    res.setHeader('Content-Type', 'text/html')
+    res.end('<h1>This is my first server created in Node.js<h1>' )
 })
 
 // Start and listen the server
